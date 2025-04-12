@@ -1,0 +1,1709 @@
+*{
+    padding: 0;
+margin: 0;
+border:none;
+outline: none;
+box-sizing: border-box;
+text-decoration: none;
+text-transform: capitalize;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+box-sizing: border-box;
+}
+/*------------body start--------*/
+body{
+    color: #000;
+    background: #efefef;   
+}
+/*------------start header--------*/
+header{
+    width: 100%;
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.1);
+    background: #fff;
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: 0.5s;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0px auto;
+    padding: 10px;
+}
+.logo img{
+height: 50px;
+width: 40px;
+
+}
+nav ul li{
+    display: inline;
+    list-style:none;
+    position: relative;
+}
+nav ul li a{
+    color: rgb(143, 143, 143);;
+    font-size: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.2s;
+}
+nav ul li a:hover{
+    color: #4e4b4b;
+}
+
+/*----------this is mobile screen---------*/
+.menu{
+    border: 2px solid #50e9e3;
+    border-radius: 5px;
+    padding: 7px 10px;
+z-index: 1000;
+cursor: pointer;
+display: none;
+}
+.menu i{
+    font-size: 17px;
+    color: rgb(143, 143, 143);
+}
+/*------------header end--------*/
+/*---------top to bottom scrollbar------------*/
+.to-top{
+    position: fixed;
+    height: 40px;
+    width: 40px;
+    background:#23d3c7;
+    bottom:20px;
+    right:32px;
+    border-radius: 10px;
+    z-index: 1000;
+    font-size: 25px;
+    color:#fff;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    opacity: 0;
+    pointer-events: none;
+    }
+    .to-top:hover{
+        color: rgb(143, 143, 143);
+    }
+    .to-top-active{
+        opacity: 1;
+    pointer-events: auto;
+    }
+    /*-----------start-hero-area--------*/
+.main{
+    background: url(images/website\ banner.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 100%;
+   margin-top: 70px;
+}
+.hero-text{
+    padding-top: 100px;
+}
+.hero-text h1{
+    font-size: 50px;
+    color: #50e9e3;
+    font-weight: 700;
+    text-shadow: 7px 7px 7px #000;
+}
+.hero-text p{
+    padding-top: 20px;
+    line-height: 1.7em;
+    font-size: 14px;
+    color: #fff;
+    width: 60%;
+    text-align: justify;
+}
+.btn{
+    margin-left: -15px;
+}
+.btn a{
+text-decoration: none;
+font-size: 17px;
+color: #fff;
+border: 2px solid #50e9e3;
+border-radius: 5px;
+margin-right: 15px;
+padding: 7px 15px;
+transition: 0.5s;
+}
+.btn a:hover{
+    background: #3bccc7;
+}
+.btn-active{
+    background: #3bccc7;
+}
+/*------------Ractangle1-start----------*/
+.ractangle-mid{
+    font-size: 25px;
+    font-weight: 700;
+    color: #424040;
+    text-align: center;
+    padding-top: 100px;
+}
+.rectangle-section .text-item h2{
+    margin-top: 50px;
+    font-size: 30px;
+    color: #336799;
+}
+.rectangle-section .text-item p{
+   margin: 0;
+   font-size: 18px;
+   line-height: 1.5em;
+}
+.rectangle-section .result-section h2{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    color: #003366;
+}
+.rectangle-section .result-section .btn{
+    width: 100%;
+    background: #24BB59;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.rectangle-section .result-section .btn a{
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff;
+    cursor: pointer;
+}
+#result{
+    color: #000;
+    font-size: 20px;
+    line-height: 1.6em;
+    margin-bottom: 10px;
+
+}
+.error {
+    color: red !important;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+/*------------Ractangle-content-1----------*/
+.rectangle-section .calculator .content1{
+    width: 100%;
+    background: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 30px 20px;
+}
+/*------------Ractangle-content-2----------*/
+.rectangle-section .calculator .content2{
+    width: 100%;
+    background: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 30px 20px;
+}
+/*------------Ractangle-content-3----------*/
+.rectangle-section .calculator .content3{
+    width: 100%;
+    background: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 30px 20px;
+}
+/*------------Ractangle-content-4----------*/
+.rectangle-section .calculator .content4{
+    width: 100%;
+    background: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 30px 20px;
+}
+/*------------Ractangle-content-5----------*/
+.rectangle-section .calculator .content5{
+    width: 100%;
+    background: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 30px 20px;
+}
+/*------------Ractangle-content-6----------*/
+.rectangle-section .calculator .content6{
+    width: 100%;
+    background: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 30px 20px;
+}
+/*------------Ractangle-content-7----------*/
+.rectangle-section .calculator .content7{
+    width: 100%;
+    background: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 30px 20px;
+}
+/*------------Ractangle-content-8----------*/
+.rectangle-section .calculator .content8{
+    width: 100%;
+    background: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 30px 20px;
+}
+/*------------Ractangle-content-9----------*/
+.rectangle-section .calculator .content9{
+    width: 100%;
+    background: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 30px 20px;
+}
+.rectangle-section .calculator .content table {
+    width: 100%;
+}
+.rectangle-section .calculator .content table td:first-child{
+    width: 65%;
+    text-align: right;
+    padding-right: 10px;
+}
+.rectangle-section .calculator .content table td:last-child{
+    width: 35%;
+}
+/*------------Ractangle-img-1--------*/
+.image1 img{
+    width: 100%;
+}
+.image3 img{
+    height: 350px;
+    width: 350px;
+}
+
+/*------------Ractangle-input-1--------*/
+.rectangle-section .calculator .content1 table td input{
+    border: 1px solid #626262;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+/*------------Ractangle-input-2--------*/
+.rectangle-section .calculator .content2 table td input{
+    border: 1px solid #626262;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 7px;
+}
+/*------------Ractangle-input-3--------*/
+.rectangle-section .calculator .content3 table td input{
+    border: 1px solid #626262;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+/*------------Ractangle-input-4--------*/
+.rectangle-section .calculator .content4 table td input{
+    border: 1px solid #626262;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+/*------------Ractangle-input-5--------*/
+.rectangle-section .calculator .content5 table td input{
+    border: 1px solid #626262;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+/*------------Ractangle-input-6--------*/
+.rectangle-section .calculator .content6 table td input{
+    border: 1px solid #626262;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+/*------------Ractangle-input-7--------*/
+.rectangle-section .calculator .content7 table td input{
+    border: 1px solid #626262;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+/*------------Ractangle-input-8--------*/
+.rectangle-section .calculator .content8 table td input{
+    border: 1px solid #626262;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+/*------------Ractangle-input-9--------*/
+.rectangle-section .calculator .content9 table td input{
+    border: 1px solid #626262;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+.calculator .content table td input{
+    width: 50%;
+}
+.rectangle-section .calculator .content1 table td select{
+    border: 1px solid #626262;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+/*------------Ractangle-select-1---------*/
+.rectangle-section .calculator .content1 table td select{
+    border: 1px solid #626262;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+/*------------Ractangle-select-2---------*/
+.rectangle-section .calculator .content2 table td select{
+    border: 1px solid #626262;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+/*------------Ractangle-select-3---------*/
+.rectangle-section .calculator .content3 table td select{
+    border: 1px solid #626262;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+/*------------Ractangle-select-4---------*/
+.rectangle-section .calculator .content4 table td select{
+    border: 1px solid #626262;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+/*------------Ractangle-select-5---------*/
+.rectangle-section .calculator .content5 table td select{
+    border: 1px solid #626262;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+/*------------Ractangle-select-6---------*/
+.rectangle-section .calculator .content6 table td select{
+    border: 1px solid #626262;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+/*------------Ractangle-select-7--------*/
+.rectangle-section .calculator .content7 table td select{
+    border: 1px solid #626262;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+/*------------Ractangle-select-8---------*/
+.rectangle-section .calculator .content8 table td select{
+    border: 1px solid #626262;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+/*------------Ractangle-select-9---------*/
+.rectangle-section .calculator .content9 table td select{
+    border: 1px solid #626262;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+.rectangle-section .calculator .button-container{
+    margin-top: 10px;
+    text-align: center;
+}
+
+/*------------Ractangle-select-9---------*/
+.rectangle-section .calculator .button-container .calculate-btn1, .calculate-btn2, .calculate-btn3, .calculate-btn4, .calculate-btn5, .calculate-btn6 .calculate-btn7, .calculate-btn8, .calculate-btn9{
+    font-size: 16px;
+    background: #3bccc7;
+    color: #fff;
+    padding: 12px 25px 12px 25px;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+
+}
+.rectangle-section .calculator .button-container .calculate-btn6, .calculate-btn7, .calculate-btn8, .calculate-btn9{
+    font-size: 16px;
+    background: #3bccc7;
+    color: #fff;
+    padding: 12px 25px 12px 25px;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+}
+
+
+.rectangle-section .calculator .button-container .calculate-btn:hover{
+    background: #000;
+}
+.rectangle-section .calculator .button-container .clear-btn{
+    font-size: 16px;
+    background: #ABABAB;
+    color: #fff;
+    padding: 12px 15px 12px 15px;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+}
+.rectangle-section .calculator .button-container .clear-btn:hover{
+    background: #000;
+}
+.rectangle-section .rcalculator .row{
+    display: flex;
+}
+.rectangle-section .rcalculator .content{
+    width: 60%;
+}
+.rectangle-section .rcalculator .image{
+    width: 40%;
+}
+.rectangle-section .rcalculator .image img{
+    width: 150px;
+    margin-top: 120px;
+    margin-left: 10px;
+}
+
+
+.Rectangle-section{
+    margin-top: 50px;
+}
+.Rectangle-section .calculator .content{
+    width: 60%;
+    background: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.Rectangle-section .calculator .content table{
+    width: 100%;
+}
+.Rectangle-section .calculator .content table td{
+    width: 60%;
+}
+.Rectangle-section .calculator .content table td:first-child{
+    text-align: right;
+    padding-right: 10px;
+}
+.Rectangle-section .calculator .content table td:last-child{
+    width: 40%;
+}
+.Rectangle-section .calculator .content table td input{
+    border: 1px solid #0e4621;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.Rectangle-section .calculator .content table td select{
+    border: 1px solid #0e4621;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.Rectangle-section .calculator .button-container{
+    margin: 0 auto;
+    text-align: center;
+}
+.Rectangle-section .calculator .calculate-btn{
+    font-size: 16px;
+    background: #0000FF;
+    color: #fff;
+    padding: 12px 25px 12px 25px;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+    margin-left: 30%;
+}
+.Rectangle-section .calculator .button-container .calculate-btn:hover{
+    background: #000;
+}
+.Rectangle-section .calculator .clear-btn{
+    font-size: 16px;
+    background: #ABABAB;
+    color: #fff;
+    padding: 12px 15px 12px 15px;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+}
+.Rectangle-section .calculator .button-container .clear-btn:hover{
+    background: #000;
+}
+.Rectangle-section .rbcalculator .row{
+    display: flex;
+}
+.Rectangle-section .rbcalculator .content{
+    width: 60%;
+}
+.Rectangle-section .rbcalculator .image{
+    width: 30%;
+}
+.Rectangle-section .rbcalculator .image img{
+    width: 280px;
+    margin-top: 130px;
+    margin-left: 20px;
+}
+.result-box{
+    background: #ecfff2;
+    border: 1px solid #24BB59;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 30px;
+    display: none;
+}
+.result-box button{
+    color: #0011ff;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 0;
+}
+.rectangle-b-section .result-area{
+    color: #000;
+    font-size: 20px;
+    margin-top: 20px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 10px;
+}
+.rectangle-b-section .result-cost{
+    color: #000;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.Rectangle-section .calculate-btn{
+    margin-left: 20%;
+}
+
+.result-table {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100% !important;
+    display: none;
+}
+.result-table th, .result-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left !important;
+}
+.result-table th {
+    background-color: #0073e6;
+    color: white;
+}
+.first-table-result {
+    margin-top: 20px;
+    border-collapse: collapse;
+    width: 100% !important;
+}
+.first-table-result th, .first-table-result td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left !important;
+}
+.first-table-result th {
+    background-color: #0073e6;
+    color: white;
+}
+
+
+.Circle-section{
+    margin-top: 50px;
+}
+.Circle-section .text-item p{
+   margin: 0;
+   font-size: 18px;
+   line-height: 1.5em;
+}
+.Circle-section .result-section h2{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    color: #003366;
+}
+.Circle-section .result-section .btn{
+    width: 100%;
+    background: #24BB59;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.Circle-section .result-section .btn a{
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff;
+    cursor: pointer;
+}
+#result{
+    color: #000;
+    font-size: 20px;
+    line-height: 1.6em;
+    margin-bottom: 10px;
+
+}
+.error {
+    color: red !important;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.Circle-section .calculator .content{
+    width: 60%;
+    background: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 30px 20px;
+}
+.Circle-section .calculator .content table {
+    width: 100%;
+}
+.Circle-section .calculator .content table td{
+    width: 60%;
+}
+.Circle-section .calculator .content table td:first-child{
+    text-align: right;
+    padding-right: 10px;
+}
+.Circle-section .calculator .content table td:last-child{
+    width: 40%;
+}
+.Circle-section .calculator .content table td input{
+    border: 1px solid #0e4621;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.Circle-section .calculator .content table td select{
+    border: 1px solid #0e4621;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.Circle-section .calculator .button-container{
+    margin-top: 10px;
+    text-align: center;
+}
+.Circle-section .calculator .button-container .calculate-btn{
+    font-size: 16px;
+    background: #0000FF;
+    color: #fff;
+    padding: 12px 25px 12px 25px;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+}
+.Circle-section .calculator .button-container .calculate-btn:hover{
+    background: #000;
+}
+.Circle-section .calculator .button-container .clear-btn{
+    font-size: 16px;
+    background: #ABABAB;
+    color: #fff;
+    padding: 12px 15px 12px 15px;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+}
+.Circle-section .calculator .button-container .clear-btn:hover{
+    background: #000;
+}
+.Circle-section .rcalculator .row{
+    display: flex;
+}
+.Circle-section .rcalculator .content{
+    width: 60%;
+}
+.Circle-section .rcalculator .image{
+    width: 40%;
+}
+.Circle-section .rcalculator .image img{
+    width: 80px;
+    margin-top: 100px;
+    margin-left: 10px;
+}
+
+
+.Ring-section{
+    margin-top: 50px;
+}
+
+.Ring-section .text-item p{
+   margin: 0;
+   font-size: 18px;
+   line-height: 1.5em;
+}
+.Ring-section .result-section h2{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    color: #003366;
+}
+.Ring-section .result-section .btn{
+    width: 100%;
+    background: #24BB59;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.Ring-section .result-section .btn a{
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff;
+    cursor: pointer;
+}
+#result{
+    color: #000;
+    font-size: 20px;
+    line-height: 1.6em;
+    margin-bottom: 10px;
+
+}
+.error {
+    color: red !important;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.Ring-section .calculator .content{
+    width: 60%;
+    background: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 30px 20px;
+}
+.Ring-section .calculator .content table {
+    width: 100%;
+}
+.Ring-section .calculator .content table td{
+    width: 60%;
+}
+.Ring-section .calculator .content table td:first-child{
+    text-align: right;
+    padding-right: 10px;
+}
+.Ring-section .calculator .content table td:last-child{
+    width: 40%;
+}
+.Ring-section .calculator .content table td input{
+    border: 1px solid #0e4621;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.Ring-section .calculator .content table td select{
+    border: 1px solid #0e4621;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.Ring-section .calculator .button-container{
+    margin-top: 10px;
+    text-align: center;
+}
+.Ring-section .calculator .button-container .calculate-btn{
+    font-size: 16px;
+    background: #0000FF;
+    color: #fff;
+    padding: 12px 25px 12px 25px;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+}
+.Ring-section .calculator .button-container .calculate-btn:hover{
+    background: #000;
+}
+.Ring-section .calculator .button-container .clear-btn{
+    font-size: 16px;
+    background: #ABABAB;
+    color: #fff;
+    padding: 12px 15px 12px 15px;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+}
+.Ring-section .calculator .button-container .clear-btn:hover{
+    background: #000;
+}
+.Ring-section .rcalculator .row{
+    display: flex;
+}
+.Ring-section .rcalculator .content{
+    width: 60%;
+}
+.Ring-section .rcalculator .image{
+    width: 40%;
+}
+.Ring-section .rcalculator .image img{
+    width: 200px;
+    margin-top: 120px;
+    margin-left: 10px;
+}
+
+
+.Triangle-section{
+    margin-top: 50px;
+}
+.Triangle-section .text-item p{
+   margin: 0;
+   font-size: 18px;
+   line-height: 1.5em;
+}
+.Triangle-section .result-section h2{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    color: #003366;
+}
+.Triangle-section .result-section .btn{
+    width: 100%;
+    background: #24BB59;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.Triangle-section .result-section .btn a{
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff;
+    cursor: pointer;
+}
+#result{
+    color: #000;
+    font-size: 20px;
+    line-height: 1.6em;
+    margin-bottom: 10px;
+
+}
+.error {
+    color: red !important;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.Triangle-section .calculator .content{
+    width: 60%;
+    background: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 30px 20px;
+}
+.Triangle-section .calculator .content table {
+    width: 100%;
+}
+.Triangle-section .calculator .content table td{
+    width: 60%;
+}
+.Triangle-section .calculator .content table td:first-child{
+    text-align: right;
+    padding-right: 10px;
+}
+.Triangle-section .calculator .content table td:last-child{
+    width: 40%;
+}
+.Triangle-section .calculator .content table td input{
+    border: 1px solid #0e4621;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.Triangle-section .calculator .content table td select{
+    border: 1px solid #0e4621;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.Triangle-section .calculator .button-container{
+    margin-top: 10px;
+    text-align: center;
+}
+.Triangle-section .calculator .button-container .calculate-btn{
+    font-size: 16px;
+    background: #0000FF;;
+    color: #fff;
+    padding: 12px 25px 12px 25px;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+}
+.Triangle-section .calculator .button-container .calculate-btn:hover{
+    background: #000;
+}
+.Triangle-section .calculator .button-container .clear-btn{
+    font-size: 16px;
+    background: #ABABAB;
+    color: #fff;
+    padding: 12px 15px 12px 15px;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+}
+.Triangle-section .calculator .button-container .clear-btn:hover{
+    background: #000;
+}
+.Triangle-section .rcalculator .row{
+    display: flex;
+}
+.Triangle-section .rcalculator .content{
+    width: 60%;
+}
+.Triangle-section .rcalculator .image{
+    width: 40%;
+}
+.Triangle-section .rcalculator .image img{
+    width: 100px;
+    margin-top: 140px;
+    margin-left: 10px;
+}
+
+.Triangle-with-section{
+    margin-top: 50px;
+}
+.Triangle-with-section .text-item p{
+   margin: 0;
+   font-size: 18px;
+   line-height: 1.5em;
+}
+.Triangle-with-section .result-section h2{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    color: #003366;
+}
+.Triangle-with-section .result-section .btn{
+    width: 100%;
+    background: #24BB59;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.Triangle-with-section .result-section .btn a{
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff;
+    cursor: pointer;
+}
+#result{
+    color: #000;
+    font-size: 20px;
+    line-height: 1.6em;
+    margin-bottom: 10px;
+
+}
+.error {
+    color: red !important;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.Triangle-with-section .calculator .content{
+    width: 60%;
+    background: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 30px 20px;
+}
+.Triangle-with-section .calculator .content table {
+    width: 100%;
+}
+.Triangle-with-section .calculator .content table td{
+    width: 60%;
+}
+.Triangle-with-section .calculator .content table td:first-child{
+    text-align: right;
+    padding-right: 10px;
+}
+.Triangle-with-section .calculator .content table td:last-child{
+    width: 40%;
+}
+.Triangle-with-section .calculator .content table td input{
+    border: 1px solid #0e4621;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.Triangle-with-section .calculator .content table td select{
+    border: 1px solid #0e4621;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.Triangle-with-section .calculator .button-container{
+    margin-top: 10px;
+    text-align: center;
+}
+.Triangle-with-section .calculator .button-container .calculate-btn{
+    font-size: 16px;
+    background: #0000FF;
+    color: #fff;
+    padding: 12px 25px 12px 25px;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+}
+.Triangle-with-section .calculator .button-container .calculate-btn:hover{
+    background: #000;
+}
+.Triangle-with-section .calculator .button-container .clear-btn{
+    font-size: 16px;
+    background: #ABABAB;
+    color: #fff;
+    padding: 12px 15px 12px 15px;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+}
+.Triangle-with-section .calculator .button-container .clear-btn:hover{
+    background: #000;
+}
+.Triangle-with-section .rcalculator .row{
+    display: flex;
+}
+.Triangle-with-section .rcalculator .content{
+    width: 60%;
+}
+.Triangle-with-section .rcalculator .image{
+    width: 40%;
+}
+.Triangle-with-section .rcalculator .image img{
+    width: 120px;
+    margin-top: 120px;
+    margin-left: 10px;
+}
+
+.Trapezoid-section{
+    margin-top: 50px;
+}
+.Trapezoid-section .text-item p{
+   margin: 0;
+   font-size: 18px;
+   line-height: 1.5em;
+}
+.Trapezoid-section .result-section h2{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    color: #003366;
+}
+.Trapezoid-section .result-section .btn{
+    width: 100%;
+    background: #24BB59;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.Trapezoid-section .result-section .btn a{
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff;
+    cursor: pointer;
+}
+#result{
+    color: #000;
+    font-size: 20px;
+    line-height: 1.6em;
+    margin-bottom: 10px;
+
+}
+.error {
+    color: red !important;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.Trapezoid-section .calculator .content{
+    width: 60%;
+    background: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 30px 20px;
+}
+.Trapezoid-section .calculator .content table {
+    width: 100%;
+}
+.Trapezoid-section .calculator .content table td{
+    width: 60%;
+}
+.Trapezoid-section .calculator .content table td:first-child{
+    text-align: right;
+    padding-right: 10px;
+}
+.Trapezoid-section .calculator .content table td:last-child{
+    width: 40%;
+}
+.Trapezoid-section .calculator .content table td input{
+    border: 1px solid #0e4621;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.Trapezoid-section .calculator .content table td select{
+    border: 1px solid #0e4621;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.Trapezoid-section .calculator .button-container{
+    margin-top: 10px;
+    text-align: center;
+}
+.Trapezoid-section .calculator .button-container .calculate-btn{
+    font-size: 16px;
+    background: #0000FF;
+    color: #fff;
+    padding: 12px 25px 12px 25px;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+}
+.Trapezoid-section .calculator .button-container .calculate-btn:hover{
+    background: #000;
+}
+.Trapezoid-section .calculator .button-container .clear-btn{
+    font-size: 16px;
+    background: #ABABAB;
+    color: #fff;
+    padding: 12px 15px 12px 15px;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+}
+.Trapezoid-section .calculator .button-container .clear-btn:hover{
+    background: #000;
+}
+.Trapezoid-section .rcalculator .row{
+    display: flex;
+}
+.Trapezoid-section .rcalculator .content{
+    width: 60%;
+}
+.Trapezoid-section .rcalculator .image{
+    width: 40%;
+}
+.Trapezoid-section .rcalculator .image img{
+    width: 120px;
+    margin-top: 150px;
+    margin-left: 10px;
+}
+
+.Sector-section{
+    margin-top: 50px;
+}
+.Sector-section .text-item p{
+   margin: 0;
+   font-size: 18px;
+   line-height: 1.5em;
+}
+.Sector-section .result-section h2{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    color: #003366;
+}
+.Sector-section .result-section .btn{
+    width: 100%;
+    background: #24BB59;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.Sector-section .result-section .btn a{
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff;
+    cursor: pointer;
+}
+#result{
+    color: #000;
+    font-size: 20px;
+    line-height: 1.6em;
+    margin-bottom: 10px;
+
+}
+.error {
+    color: red !important;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.Sector-section .calculator .content{
+    width: 60%;
+    background: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 30px 20px;
+}
+.Sector-section .calculator .content table {
+    width: 100%;
+}
+.Sector-section .calculator .content table td{
+    width: 60%;
+}
+.Sector-section .calculator .content table td:first-child{
+    text-align: right;
+    padding-right: 10px;
+}
+.Sector-section .calculator .content table td:last-child{
+    width: 40%;
+}
+.Sector-section .calculator .content table td input{
+    border: 1px solid #0e4621;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.Sector-section .calculator .content table td select{
+    border: 1px solid #0e4621;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.Sector-section .calculator .button-container{
+    margin-top: 10px;
+    text-align: center;
+}
+.Sector-section .calculator .button-container .calculate-btn{
+    font-size: 16px;
+    background: #0000FF;
+    color: #fff;
+    padding: 12px 25px 12px 25px;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+}
+.Sector-section .calculator .button-container .calculate-btn:hover{
+    background: #000;
+}
+.Sector-section .calculator .button-container .clear-btn{
+    font-size: 16px;
+    background: #ABABAB;
+    color: #fff;
+    padding: 12px 15px 12px 15px;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+}
+.Sector-section .calculator .button-container .clear-btn:hover{
+    background: #000;
+}
+.Sector-section .rcalculator .row{
+    display: flex;
+}
+.Sector-section .rcalculator .content{
+    width: 60%;
+}
+.Sector-section .rcalculator .image{
+    width: 40%;
+}
+.Sector-section .rcalculator .image img{
+    width: 100px;
+    margin-top: 120px;
+    margin-left: 10px;
+}
+
+.Parallelogram-section{
+    margin-top: 50px;
+}
+.Parallelogram-section .text-item p{
+   margin: 0;
+   font-size: 18px;
+   line-height: 1.5em;
+}
+.Parallelogram-section .result-section h2{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    color: #003366;
+}
+.Parallelogram-section .result-section .btn{
+    width: 100%;
+    background: #24BB59;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.Parallelogram-section .result-section .btn a{
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff;
+    cursor: pointer;
+}
+#result{
+    color: #000;
+    font-size: 20px;
+    line-height: 1.6em;
+    margin-bottom: 10px;
+
+}
+.error {
+    color: red !important;
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.Parallelogram-section .calculator .content{
+    width: 60%;
+    background: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 30px 20px;
+}
+.Parallelogram-section .calculator .content table {
+    width: 100%;
+}
+.Parallelogram-section .calculator .content table td{
+    width: 60%;
+}
+.Parallelogram-section .calculator .content table td:first-child{
+    text-align: right;
+    padding-right: 10px;
+}
+.Parallelogram-section .calculator .content table td:last-child{
+    width: 40%;
+}
+.Parallelogram-section .calculator .content table td input{
+    border: 1px solid #0e4621;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.Parallelogram-section .calculator .content table td select{
+    border: 1px solid #0e4621;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.Parallelogram-section .calculator .button-container{
+    margin-top: 10px;
+    text-align: center;
+}
+.Parallelogram-section .calculator .button-container .calculate-btn{
+    font-size: 16px;
+    background: #0000FF;
+    color: #fff;
+    padding: 12px 25px 12px 25px;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+}
+.Parallelogram-section .calculator .button-container .calculate-btn:hover{
+    background: #000;
+}
+.Parallelogram-section .calculator .button-container .clear-btn{
+    font-size: 16px;
+    background: #ABABAB;
+    color: #fff;
+    padding: 12px 15px 12px 15px;
+    box-sizing: border-box;
+    border: none;
+    cursor: pointer;
+}
+.Parallelogram-section .calculator .button-container .clear-btn:hover{
+    background: #000;
+}
+.Parallelogram-section .rcalculator .row{
+    display: flex;
+}
+.Parallelogram-section .rcalculator .content{
+    width: 60%;
+}
+.Parallelogram-section .rcalculator .image{
+    width: 40%;
+}
+.Parallelogram-section .rcalculator .image img{
+    width: 150px;
+    margin-top: 120px;
+    margin-left: 10px;
+}
+
+
+.right-side{
+    margin-top: 70px;
+}
+.right-side .search-bar{
+    text-align: center;
+    padding-top: 15px;
+}
+.right-side .search-bar form{
+    display: flex;
+}
+.right-side .search-bar input{
+    width: 250px;
+    font-weight: 400px;
+    font-size: 14px;
+    color: #5e5e5e;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    margin-right: 5px;
+}
+.right-side .search-bar button{
+    width: 100px;
+    font-size: 14px;
+    color: #fff;
+    padding: 5px;
+    border: none;
+    box-sizing: border-box;
+    background: #0E4621;
+    cursor: pointer;
+}
+.others-calculate-box{
+    width: 100%;
+    background: #fff;
+    border: 1px solid #bebebe;
+    border-radius: 3px;
+    margin-top: 20px;
+}
+.others-calculate-box .other-section .row{
+    display: flex;
+}
+.others-calculate-box .other-section .ul-item{
+    width: 50%;
+}
+.others-calculate-box .other-section h2{
+    padding: 10px;
+    box-sizing: border-box;
+    background: #336799;
+    color: #fff;
+    font-weight: 500;
+    font-size: 20px;
+    margin: 0;
+}
+.others-calculate-box .other-section .ul-item ul{
+    list-style: none;
+    margin-left: 10px;
+    padding: 0;
+    
+}
+.others-calculate-box .other-section .ul-item ul li a{
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #000;
+}
+.others-calculate-box .financila{
+    background: #ddd;
+}
+.others-calculate-box .financila ul{
+   list-style: none;
+   padding: 5px 0;
+   margin: 0;
+}
+.others-calculate-box .financila ul li{
+    display: inline-block;
+}
+.others-calculate-box .financila ul li a{
+    color: #000;
+    font-size: 14px;
+    margin-left: 10px;
+}
+/*-----------Square footage calculator-------*/
+.reference-img img{
+    width: 100%;
+}
+.reference-text h3{
+    font-size: 25px;
+    color: #3bccc7;
+    font-weight: 700;
+}
+.reference-text h4{
+    color: #626262;
+    font-size: 16px;
+    line-height: 1.8em;
+    padding-top: 10px;
+}
+.reference-text p{
+    color: rgb(143, 143, 143);
+    font-size: 14px;
+    line-height: 1.7em;
+    font-weight: 400;
+    text-align: justify;
+}
+/*-----------online-use-squre-footage-calculator-------*/
+.footage{
+    height: 410px;
+    background-color: rgb(235, 232, 232);
+    border-radius: 5px;
+    box-shadow: 0 0 10px 10px rgba(0,0,0,0.1);
+    padding: 7px 10px;
+}
+.footage-img{
+    padding-top: 20px;
+}
+.footage-img img{
+width: 100%;
+height: 170px;
+}
+.footage-text{
+    padding-top: 20px;
+}
+.footage-text h3{
+    font-size: 17px;
+    color: #3bccc7;
+    font-weight: 600;
+}
+.footage-text p{
+    font-size: 12px;
+    color: rgb(143, 143, 143);
+    font-weight: 400;
+    line-height: 1.7em;
+    text-align: justify;
+}
+/*------------footer--------*/
+.footer{
+    height: 70px;
+    width: 100%;
+    background: #fff;
+}
+.footer-link{
+    text-align: center;
+    padding-top: 25px;
+}
+.footer-link ul li{
+    display: inline;
+    list-style:none;
+    background: #23d3c7;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+.footer-link ul li a{
+    font-size: 14px;
+    color: #fff;
+}
+/*------------footer-last-------*/
+.footer-last{
+    height: 50px;
+    width: 100%;
+    background: #000;
+}
+.footer-last-link{
+    padding-top: 15px;
+    text-align: center;
+}
+.footer-last-link ul li{
+    display: inline;
+    list-style:none;
+}
+.footer-last-link ul li a{
+    font-size: 14px;
+    color: #fff;
+   text-decoration: none;
+   font-size: 12px;
+}
+.footer-last-link ul li span{
+    color: #fff;
+    font-size: 12px;
+}
+
+
+
+/*------------this is for mobile screen-------*/
+@media only screen and (max-width: 771px){
+    .menu{
+        display: block;
+        font-size: 30px;
+        color: #000;
+    }
+    .logo img{
+        height: 40px;
+        width: 30px;
+    }
+    .main{
+        margin-top: 60px;
+    }
+    #listmenu{
+        position: absolute;
+        height: 100vh;
+        width: 100%;
+        top: 60px;
+        left: 0;
+        background: #fff;
+        box-shadow: 0 0 10px 10px rgba(87, 85, 85, 0.1);
+        overflow: hidden;
+        max-height: 0;
+        transition: 0.5s;
+    }
+#listmenu li{
+    display: block;
+}
+#listmenu li a{
+    color: #000;
+    line-height: 3em;
+    color: #626262;
+    font-size: 1rem;
+}
+#listmenu i{
+    display: none;
+}
+.hero-text h1{
+    font-size: 35px;
+    margin-top: -30px;
+}
+.hero-text p{
+    width: 100%;
+}
+.btn a{
+    font-size: 14px;
+    padding: 3px 7px;
+    transition: 0.5s;
+    margin-right: 10px;
+    }
+
+/*------------Ractangle-input-1--------*/
+.rectangle-section .calculator .content1 table td input, .content2 table td input, .content3 table td input, .content4 table td input, .content5 table td input{
+    width: 80%;
+}
+.rectangle-section .calculator .content6 table td input, .content7 table td input, .content8 table td input, .content9 table td input{
+    width: 80%;
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

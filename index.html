@@ -1,0 +1,1235 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!---------bootstrap css------------>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <!----------bootstrap js--------->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!----------font awesome ---------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!------google font popins------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <!--------external css-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/images/favicon-32x32.png">
+</head>
+<body>
+     <!--------------header start-------------->
+     <header>
+        <nav>
+            <div class="logo"><img src="images/logo.png" alt=""></div>
+            <div class="menu">
+                <i class="fa-solid fa-bars"></i>
+               </div>
+            <ul id="listmenu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="https:/theagecalculator.net" target="_blank" >Age</a></li>
+                <li><a href="https://bestpercentagecalculator.net/" target="_blank" >Percentage Calculator</a> </li>
+              
+            </ul>
+        </nav>
+    </header>
+    <!----------header end --------->
+     <!-----------top to bottom scrollbar------>
+<a href="#" class="to-top">
+    <i class="fa-solid fa-chevron-down"></i>
+</a>
+<!----------start-hero-area--------->
+    <div class="main" id="hero">
+                        <div class="container">
+                            <div class="hero-text">
+                                <h1>Square Footage Calculator</h1>
+                                <p>The Square Footage Calculator online is an essential tool for homeowners, contractors, and designers. It simplifies measurements for house building, painting, and flooring, making projects more efficient and cost-effective. If you need to measure a single room or an entire house, an area calculator square feet helps you plan accurately and save resources. Using an online calculator ensures precision, allowing you to focus on bringing your vision to life without worrying about measurement errors.</p>
+								<div class="btn">
+                                    <a href="#footage" class="btn-active">Read More</a>
+                                    <a href="https://bestpercentagecalculator.net/" target="_blank">Percentage Calculator</a>
+                                </div>
+								</div>
+                                </div>							
+                            </div>
+                            <!--------------Ractangle-content-1-------->
+                            <h2 class="ractangle-mid">Modify the values and click the calculate button to use</h2><hr>
+                            <div class="rectangle-section">
+                            <div class="calculator rcalculator">
+                                <div class="container">
+                                <h2 id="recHeader" style="padding-bottom: 20px;">Calculate Your <span style="color: #3bccc7;">Business</span></h2>
+        
+                                <div class="row">
+                                    <div class="col-md-6 mt-3">
+                                    <div class="content1">
+                                    <div class="result-box rhiddenDiv" id="resultDivRec">
+                                        <div id="resultRec"></div>
+                                        <div id="unitOptionsRec" style="">
+                                            <button onclick="toggleUnitTable('unitTableRec')">Show result in other units</button>
+                                            <div id="unitTableRec" style="display: none; margin-top: 10px;">
+										<table class="first-table-result" style="width: 100%; border-collapse: collapse;">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Area</th>
+                                                            <th>Unit</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="unitResultBodyRec"></tbody>
+                                                </table>
+                                            </div>
+                                        </div>                        
+                                    </div>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <label>Length <input type="number" id="lengthRec" value="30"></label>
+                                            </td>
+                                            <td>
+                                                <label>
+                                                    <select id="lengthUnitRec">
+                                                        <option value="feet" selected>feet</option>
+                                                        <option value="miles">miles</option>
+                                                        <option value="yards">yards</option>
+                                                        <option value="inches">inches</option>
+                                                        <option value="meters" >meters</option>
+                                                        <option value="kilometers">kilometers</option>
+                                                        <option value="centimeters">centimeters</option>
+                                                    </select>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label>Width <input type="number" id="widthRec" value="20"></label>
+                                            </td>
+                                            <td>
+                                                <label>
+                                                    <select id="widthUnitRec">
+                                                        <option value="feet" selected>feet</option>
+                                                        <option value="miles">miles</option>
+                                                        <option value="yards">yards</option>
+                                                        <option value="inches">inches</option>
+                                                        <option value="meters" >meters</option>
+                                                        <option value="kilometers">kilometers</option>
+                                                        <option value="centimeters">centimeters</option>
+                                                    </select>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label>Quantity <input type="number" id="quantityRec" value="1"></label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label>Price (optional) $ <input type="number" id="priceRec"></label>
+                                            </td>
+                                            <td>
+                                                <label>
+                                                    <select id="priceUnitRec">
+                                                        <option value="Square Feet" selected>per square feet</option>
+                                                        <option value="Square yards">per square yards</option>
+                                                        <option value="Square inches">per square inches</option>
+                                                        <option value="Square meters" >per square meters</option>
+                                                        <option value="Square centimeters">per square cm</option>
+                                                    </select>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    
+                                    <div class="button-container">
+                                        <button class="calculate-btn1" onclick="calculateAreaRec()">Calculate</button>
+                                        <button class="clear-btn" onclick="clearFieldsRec()">Clear</button>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col-md-6 mt-3">
+                                    <div class="image1">
+                                        <img src="images/border-img.png" alt="">
+                                    </div>
+                                </div>
+                                </div>
+                   <!------------Ractangle-end--------------->        
+                          <!------------Ractangle-content-2-------------->      
+                    <div class="Rectangle-section rectangle-b-section">        
+                            <div class="calculator rbcalculator">
+                                <div class="container">
+                                    <h2 id="recHeader" style="padding-bottom: 20px; padding-top: 30px;">Calculate Your <span style="color: #3bccc7;">Business</span></h2>
+                                    <div class="row">
+                                        <div class="col-md-6 mt-3">
+                                    <div class="content2">
+                                    <div class="result-box rhiddenDiv" id="resultDivRecBorder">
+                                        <div id="resultRecBorder"></div>
+                                        <div id="unitOptionsRecBorder" style="">
+                                            <button onclick="toggleUnitTable('unitTableRecBorder')">Show result in other units</button>
+                                            <div id="unitTableRecBorder" style="display: none; margin-top: 10px;">
+										<table class="first-table-result" style="width: 100%; border-collapse: collapse;">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Area</th>
+                                                            <th>Unit</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="unitResultBodyRecBorder"></tbody>
+                                                </table>
+                                            </div>
+                                        </div>                        
+                                    </div>
+                                        <table>
+                                            <tr>
+                                                <label>
+                                                    <td>
+                                                        Length: <input type="number" value="30" id="lengthRecBorder">
+                                                            
+                                                        
+                                                    </td>
+                                                    <td>
+                                                      
+                                                            <select id="lengthUnitRecBorder">
+                                                                <option value="feet" selected>feet</option>
+                                                                <option value="yards">yards</option>
+                                                                <option value="inches">inches</option>
+                                                                <option value="meters" >meters</option>
+                                                                <option value="centimeters">centimeters</option>
+                                                            </select>
+                                                     
+                                                    </td>
+                                                </label>
+                                            </tr>
+                                            <tr>
+                                                <label>
+                                                    <td>
+                                                        Width: <input type="number"  value="40"  id="widthRecBorder" >
+                                                        
+                                                    </td>
+                                                    <td>
+                                                        
+                                                            <select id="widthUnitRecBorder">
+                                                                <option value="feet" selected>feet</option>
+                                                                <option value="yards">yards</option>
+                                                                <option value="inches">inches</option>
+                                                                <option value="meters" >meters</option>
+                                                                <option value="centimeters">centimeters</option>
+                                                            </select>
+                                                        
+                                                    </td>
+                                                </label>
+                                            </tr>
+                                            <tr>
+                                               <label>
+                                                <td>
+                                                    Border Width: <input type="number" id="borderWidthRecBorder" value="5">
+                                                </td>
+                                                <td>
+                                                    
+                                                        <select id="borderWidthUnitRecBorder">
+                                                            <option value="feet" selected>feet</option>
+                                                            <option value="yards">yards</option>
+                                                            <option value="inches">inches</option>
+                                                            <option value="meters" >meters</option>
+                                                            <option value="centimeters">centimeters</option>
+                                                        </select>
+                                                    
+                                                </td>
+                                               </label>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <label> Quantity: <input type="number" id="quantityRecBorder" value="1"></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <label>
+                                                    <td>
+                                                        Price (optional): <input type="number" id="priceRecBorder">
+                                                    </td>
+                                                    <td>
+                                                        
+                                                            <select id="priceUnitRecBorder">
+                                                                <option value="Square Feet" selected>per square feet</option>
+																<option value="Square yards">per square yards</option>
+																<option value="Square inches">per square inches</option>
+																<option value="Square meters" >per square meters</option>
+																<option value="Square centimeters">per square cm</option>
+                                                            </select>
+                                                        
+                                                    </td>
+                                                </label>
+                                            </tr>
+                                        </table>  
+                                        
+                                        <button class="calculate-btn2" onclick="calculateAreaRecBorder()">Calculate</button>
+                                        <button class="clear-btn" onclick="clearFieldsRecBorder()">Clear</button>
+                        </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                    <div class="image1">
+                                        <img src="images/border-img2.png">
+                                    </div>
+                                </div>
+                        </div>
+                          
+                       
+              
+                  <!------------Ractangle-content-3-------------->  
+                
+                    <div class="Circle-section">
+                            <div class="calculator rcalculator">
+                                <div class="container">
+                                    <h2 id="recHeader" style="padding-bottom: 20px; padding-top: 30px;">Calculate Your <span style="color: #3bccc7;">Business</span></h2>
+                                   
+                                <div class="row">
+                                    <div class="col-md-6 mt-3">
+                                    <div class="content3">
+                                    <div class="result-box rhiddenDiv" id="resultDivCircle">
+                                        <div id="resultRecCircle"></div>
+                                        <div id="unitOptionsCircle" style="">
+                                            <button onclick="toggleUnitTable('unitTableCircle')">Show result in other units</button>
+                                            <div id="unitTableCircle" style="display: none; margin-top: 10px;">
+                                                <table class="first-table-result" style="width: 100%; border-collapse: collapse;">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Area</th>
+                                                            <th>Unit</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="unitResultBodyCircle"></tbody>
+                                                </table>
+                                            </div>
+                                        </div>                        
+                                    </div>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <label>Diameter <input type="number" id="diameterCircle" value="30"></label>
+                                            </td>
+                                            <td>
+                                                <label>
+                                                    <select id="diameterUnitCircle">
+                                                        <option value="feet" selected>feet</option>
+                                                        <option value="miles">miles</option>
+                                                        <option value="yards">yards</option>
+                                                        <option value="inches">inches</option>
+                                                        <option value="meters" >meters</option>
+                                                        <option value="kilometers">kilometers</option>
+                                                        <option value="centimeters">centimeters</option>
+                                                    </select>
+                                                </label>
+                                            </td>
+                                        </tr>
+                
+                                        <tr>
+                                            <td>
+                                                <label>Quantity <input type="number" id="quantityCircle" value="1"></label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label>Price (optional) $ <input type="number" id="priceCircle"></label>
+                                            </td>
+                                            <td>
+                                                <label>
+                                                    <select id="priceUnitCircle">
+                                                                <option value="Square Feet" selected>per square feet</option>
+																<option value="Square yards">per square yards</option>
+																<option value="Square inches">per square inches</option>
+																<option value="Square meters" >per square meters</option>
+																<option value="Square centimeters">per square cm</option>
+
+                                                    </select>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    
+                                    <div class="button-container">
+									  <button class="calculate-btn3" onclick="calculateAreaCircle()">Calculate</button>
+                                        <button class="clear-btn" onclick="clearFieldsCircle()">Clear</button>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                    <div class="image3">
+                                        <img src="images/circle.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>  
+                 <!------------Ractangle-content-4-------------->  
+                    <div class="Ring-section">
+                            <div class="calculator rcalculator">
+                                <div class="container">
+                                    <h2 id="recHeader" style="padding-bottom: 20px; padding-top: 30px;">Calculate Your <span style="color: #3bccc7;">Business</span></h2>
+                                   
+                                <div class="row">
+                                    <div class="col-md-6 mt-3">
+                                    <div class="content4">
+                                    <div class="result-box rhiddenDiv" id="resultDivRing">
+                                        <div id="resultRing"></div>
+                                        <div id="unitOptionsRing" style="">
+                                            <button onclick="toggleUnitTable('unitTableRing')">Show result in other units</button>
+                                            <div id="unitTableRing" style="display: none; margin-top: 10px;">
+                                                <table class="first-table-result" style="width: 100%; border-collapse: collapse;">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Area</th>
+                                                            <th>Unit</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="unitResultBodyRing"></tbody>
+                                                </table>
+                                            </div>
+                                        </div>                        
+                                    </div>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <label>Outer Diameter <input type="number" id="outerDiameterRing" value="30"></label>
+                                            </td>
+                                            <td>
+                                                <label>
+                                                    <select id="outerDiameterUnitRing">
+                                                        <option value="feet" selected>feet</option>
+                                                        <option value="miles">miles</option>
+                                                        <option value="yards">yards</option>
+                                                        <option value="inches">inches</option>
+                                                        <option value="meters" >meters</option>
+                                                        <option value="kilometers">kilometers</option>
+                                                        <option value="centimeters">centimeters</option>
+                                                    </select>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label>Border Width <input type="number" id="borderWidthRing" value="20"></label>
+                                            </td>
+                                            <td>
+                                                <label>
+                                                    <select id="borderWidthUnitRing">
+                                                        <option value="feet" selected>feet</option>
+                                                        <option value="miles">miles</option>
+                                                        <option value="yards">yards</option>
+                                                        <option value="inches">inches</option>
+                                                        <option value="meters" >meters</option>
+                                                        <option value="kilometers">kilometers</option>
+                                                        <option value="centimeters">centimeters</option>
+                                                    </select>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label>Quantity <input type="number" id="quantityRing" value="1"></label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label>Price (optional) $ <input type="number" id="priceRing"></label>
+                                            </td>
+                                            <td>
+                                                <label>
+                                                    <select id="priceUnitRing">
+                                                        <option value="Square Feet" selected>per square feet</option>
+														<option value="Square yards">per square yards</option>
+														<option value="Square inches">per square inches</option>
+														<option value="Square meters" >per square meters</option>
+														<option value="Square centimeters">per square cm</option>
+                                                    </select>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    
+                                    <div class="button-container">
+                                       <button class="calculate-btn4" onclick="calculateAreaRing()">Calculate</button>
+                                        <button class="clear-btn" onclick="clearFieldsRing()">Clear</button>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                    <div class="image3 mt-3">
+                                        <img src="images/ring img.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        
+
+                    <!------------Ractangle-content-5-------------->  
+                
+                    <div class="Triangle-section">
+                            <div class="calculator rcalculator">
+                                <div class="container">
+                                    <h2 id="recHeader" style="padding-bottom: 20px; padding-top: 30px;">Calculate Your <span style="color: #3bccc7;">Business</span></h2>
+                                   
+                                <div class="row">
+                                    <div class="col-md-6 mt-3">
+                                    <div class="content5">
+                                    <div class="result-box rhiddenDiv" id="resultDivTriEdge">
+                                        <div id="resultTriEdge"></div>
+                                        <div id="unitOptionsTriEdge" style="">
+                                            <button onclick="toggleUnitTable('unitTableTriEdge')">Show result in other units</button>
+                                            <div id="unitTableTriEdge" style="display: none; margin-top: 10px;">
+                                                <table class="first-table-result" style="width: 100%; border-collapse: collapse;">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Area</th>
+                                                            <th>Unit</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="unitResultBodyTriEdge"></tbody>
+                                                </table>
+                                            </div>
+                                        </div>                        
+                                    </div>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <label>Edge 1 (a) <input type="number" id="lengthEdge1TriEdge" value="30"></label>
+                                            </td>
+                                            <td>
+                                                <label>
+                                                    <select id="edge1LengthUnitTriEdge">
+                                                        <option value="feet" selected>feet</option>
+                                                        <option value="miles">miles</option>
+                                                        <option value="yards">yards</option>
+                                                        <option value="inches">inches</option>
+                                                        <option value="meters" >meters</option>
+                                                        <option value="kilometers">kilometers</option>
+                                                        <option value="centimeters">centimeters</option>
+                                                    </select>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label>Edge 2 (b) <input type="number" id="lengthEdge2TriEdge" value="20"></label>
+                                            </td>
+                                            <td>
+                                                <label>
+                                                    <select id="edge2LengthUnitTriEdge">
+                                                        <option value="feet" selected>feet</option>
+                                                        <option value="miles">miles</option>
+                                                        <option value="yards">yards</option>
+                                                        <option value="inches">inches</option>
+                                                        <option value="meters" >meters</option>
+                                                        <option value="kilometers">kilometers</option>
+                                                        <option value="centimeters">centimeters</option>
+                                                    </select>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label>Edge 3 (c) <input type="number" id="lengthEdge3TriEdge" value="20"></label>
+                                            </td>
+                                            <td>
+                                                <label>
+                                                    <select id="edge3LengthUnitTriEdge">
+                                                        <option value="feet" selected>feet</option>
+                                                        <option value="miles">miles</option>
+                                                        <option value="yards">yards</option>
+                                                        <option value="inches">inches</option>
+                                                        <option value="meters" >meters</option>
+                                                        <option value="kilometers">kilometers</option>
+                                                        <option value="centimeters">centimeters</option>
+                                                    </select>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label>Quantity <input type="number" id="quantityTriEdge" value="1"></label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label>Price (optional) $ <input type="number" id="priceTriEdge"></label>
+                                            </td>
+                                            <td>
+                                                <label>
+                                                    <select id="priceUnitTriEdge">
+                                                        <option value="Square Feet" selected>per square feet</option>
+														<option value="Square yards">per square yards</option>
+														<option value="Square inches">per square inches</option>
+														<option value="Square meters" >per square meters</option>
+														<option value="Square centimeters">per square cm</option>
+                                                    </select>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    
+                                    <div class="button-container">
+										<button class="calculate-btn5" onclick="calculateAreaTriEdge()">Calculate</button>
+                                        <button class="clear-btn" onclick="clearFieldsTriEdge()">Clear</button>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                    <div class="image1 mt-3">
+                                        <img src="images/area-triangle.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div> 
+                     <!------------Ractangle-content-6-------------->  
+                    <div class="Triangle-with-section">
+                            <div class="calculator rcalculator">
+                                <div class="container">
+                                    <h2 id="recHeader" style="padding-bottom: 20px; padding-top: 30px;">Calculate Your <span style="color: #3bccc7;">Business</span></h2>
+                                   
+                                <div class="row">
+                                    <div class="col-md-6 mt-3">
+                                    <div class="content6">
+                                    <div class="result-box rhiddenDiv" id="resultDivTriangle">
+                                        <div id="resultTriangle"></div>
+                                        <div id="unitOptionsTriangle" style="">
+                                            <button onclick="toggleUnitTable('unitTableTriangle')">Show result in other units</button>
+                                            <div id="unitTableTriangle" style="display: none; margin-top: 10px;">
+                                                <table class="first-table-result" style="width: 100%; border-collapse: collapse;">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Area</th>
+                                                            <th>Unit</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="unitResultBodyTriangle"></tbody>
+                                                </table>
+                                            </div>
+                                        </div>                        
+                                    </div>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <label>Base <input type="number" id="baseTriangle" value="30"></label>
+                                            </td>
+                                            <td>
+                                                <label>
+                                                    <select id="baseUnitTriangle">
+                                                        <option value="feet" selected>feet</option>
+                                                        <option value="miles">miles</option>
+                                                        <option value="yards">yards</option>
+                                                        <option value="inches">inches</option>
+                                                        <option value="meters" >meters</option>
+                                                        <option value="kilometers">kilometers</option>
+                                                        <option value="centimeters">centimeters</option>
+                                                    </select>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label>Height <input type="number" id="heightTriangle" value="20"></label>
+                                            </td>
+                                            <td>
+                                                <label>
+                                                    <select id="heightUnitTriangle">
+                                                        <option value="feet" selected>feet</option>
+                                                        <option value="miles">miles</option>
+                                                        <option value="yards">yards</option>
+                                                        <option value="inches">inches</option>
+                                                        <option value="meters" >meters</option>
+                                                        <option value="kilometers">kilometers</option>
+                                                        <option value="centimeters">centimeters</option>
+                                                    </select>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label>Quantity <input type="number" id="quantityTriangle" value="1"></label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label>Price (optional) $ <input type="number" id="priceTriangle"></label>
+                                            </td>
+                                            <td>
+                                                <label>
+                                                    <select id="priceUnitTriangle">
+                                                        <option value="Square Feet" selected>per square feet</option>
+														<option value="Square yards">per square yards</option>
+														<option value="Square inches">per square inches</option>
+														<option value="Square meters" >per square meters</option>
+														<option value="Square centimeters">per square cm</option>
+                                                    </select>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    
+                                    <div class="button-container">
+                                      <button class="calculate-btn6" onclick="calculateAreaTriangle()">Calculate</button>
+                                        <button class="clear-btn" onclick="clearFieldsTriangle()">Clear</button>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                    <div class="image1">
+                                        <img src="images/triangle-base.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div> 
+                 <!------------Ractangle-content-7-------------->  
+                    <div class="Trapezoid-section">
+                            <div class="calculator rcalculator">
+                                <div class="container">
+                                    <h2 id="recHeader" style="padding-bottom: 20px; padding-top: 30px;">Calculate Your <span style="color: #3bccc7;">Business</span></h2>
+                                   
+                                <div class="row d-flex justify-content-center">
+                                    <div class="col-md-6 mt-3">
+                                    <div class="content7">
+                                    <div class="result-box rhiddenDiv" id="resultDivTrapezoid">
+                                        <div id="resultTrapezoid"></div>
+                                        <div id="unitOptionsTrapezoid" style="">
+                                            <button onclick="toggleUnitTable('unitTableTrapezoid')">Show result in other units</button>
+                                            <div id="unitTableTrapezoid" style="display: none; margin-top: 10px;">
+                                                <table class="first-table-result" style="width: 100%; border-collapse: collapse;">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Area</th>
+                                                            <th>Unit</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="unitResultBodyTrapezoid"></tbody>
+                                                </table>
+                                            </div>
+                                        </div>                        
+                                    </div>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <label>Base 1 <input type="number" id="base1Trapezoid" value="30"></label>
+                                            </td>
+                                            <td>
+                                                <label>
+                                                    <select id="base1UnitTrapezoid">
+                                                        <option value="feet" selected>feet</option>
+                                                        <option value="miles">miles</option>
+                                                        <option value="yards">yards</option>
+                                                        <option value="inches">inches</option>
+                                                        <option value="meters" >meters</option>
+                                                        <option value="kilometers">kilometers</option>
+                                                        <option value="centimeters">centimeters</option>
+                                                    </select>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label>Base 2 <input type="number" id="base2Trapezoid" value="20"></label>
+                                            </td>
+                                            <td>
+                                                <label>
+                                                    <select id="base2UnitTrapezoid">
+                                                        <option value="feet" selected>feet</option>
+                                                        <option value="miles">miles</option>
+                                                        <option value="yards">yards</option>
+                                                        <option value="inches">inches</option>
+                                                        <option value="meters" >meters</option>
+                                                        <option value="kilometers">kilometers</option>
+                                                        <option value="centimeters">centimeters</option>
+                                                    </select>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label>Height <input type="number" id="heightTrapezoid" value="20"></label>
+                                            </td>
+                                            <td>
+                                                <label>
+                                                    <select id="heightUnitTrapezoid">
+                                                        <option value="feet" selected>feet</option>
+                                                        <option value="miles">miles</option>
+                                                        <option value="yards">yards</option>
+                                                        <option value="inches">inches</option>
+                                                        <option value="meters" >meters</option>
+                                                        <option value="kilometers">kilometers</option>
+                                                        <option value="centimeters">centimeters</option>
+                                                    </select>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label>Quantity <input type="number" id="quantityTrapezoid" value="1"></label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label>Price (optional) $ <input type="number" id="priceTrapezoid"></label>
+                                            </td>
+                                            <td>
+                                                <label>
+                                                    <select id="priceUnitTrapezoid">
+                                                        <option value="Square Feet" selected>per square feet</option>
+														<option value="Square yards">per square yards</option>
+														<option value="Square inches">per square inches</option>
+														<option value="Square meters" >per square meters</option>
+														<option value="Square centimeters">per square cm</option>
+                                                    </select>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    
+                                    <div class="button-container">
+                                        <button class="calculate-btn7" onclick="calculateAreaTrapezoid()">Calculate</button>
+                                        <button class="clear-btn" onclick="clearFieldsTrapezoid()">Clear</button>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                    <div class="image1 mt-3">
+                                        <img src="images/area-trapez.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div> 
+                 <!------------Ractangle-content-8-------------->  
+                    <div class="Sector-section">
+                        <div class="container">
+                            <div class="calculator rcalculator">
+                                <div class="container">
+                                    <h2 id="recHeader" style="padding-bottom: 20px; padding-top: 30px;">Calculate Your <span style="color: #3bccc7;">Business</span></h2>
+                                   
+                                <div class="row">
+                                    <div class="col-md-6 mt-3">
+                                    <div class="content8">
+                                    <div class="result-box rhiddenDiv" id="resultDivSector">
+                                        <div id="resultSector"></div>
+                                        <div id="unitOptionsSector" style="">
+                                            <button onclick="toggleUnitTable('unitTableSector')">Show result in other units</button>
+                                            <div id="unitTableSector" style="display: none; margin-top: 10px;">
+                                                <table class="first-table-result" style="width: 100%; border-collapse: collapse;">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Area</th>
+                                                            <th>Unit</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="unitResultBodySector"></tbody>
+                                                </table>
+                                            </div>
+                                        </div>                        
+                                    </div>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <label>Radius <input type="number" id="radiusSector" value="30"></label>
+                                            </td>
+                                            <td>
+                                                <label>
+                                                    <select id="radiusUnitSector">
+                                                        <option value="feet" selected>feet</option>
+                                                        <option value="miles">miles</option>
+                                                        <option value="yards">yards</option>
+                                                        <option value="inches">inches</option>
+                                                        <option value="meters" >meters</option>
+                                                        <option value="kilometers">kilometers</option>
+                                                        <option value="centimeters">centimeters</option>
+                                                    </select>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label>Angle <input type="number" id="angleSector" value="20"></label>
+                                            </td>
+                                            <td>
+                                                <label>
+                                                    <select id="angleUnitSector">
+                                                        <option value="degree">degree</option>
+                                                        <option value="radian">radian</option>                                                      
+                                                    </select>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label>Quantity <input type="number" id="quantitySector" value="1"></label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label>Price (optional) $ <input type="number" id="priceSector"></label>
+                                            </td>
+                                            <td>
+                                                <label>
+                                                    <select id="priceUnitSector">
+                                                       <option value="Square Feet" selected>per square feet</option>
+														<option value="Square yards">per square yards</option>
+														<option value="Square inches">per square inches</option>
+														<option value="Square meters" >per square meters</option>
+														<option value="Square centimeters">per square cm</option>
+                                                    </select>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    
+                                    <div class="button-container">
+                                        <button class="calculate-btn8" onclick="calculateAreaSector()">Calculate</button>
+                                        <button class="clear-btn" onclick="clearFieldsSector()">Clear</button>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                    <div class="image1 mt-3">
+                                        <img src="images/area-sector.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div> 
+                 <!------------Ractangle-content-9-------------->  
+                    <div class="Parallelogram-section">
+                            <div class="calculator rcalculator">
+                                <div class="container">
+                                    <h2 id="recHeader" style="padding-bottom: 20px; padding-top: 30px;">Calculate Your <span style="color: #3bccc7;">Business</span></h2>
+                                   
+                                <div class="row">
+                                    <div class="col-md-6 mt-3">
+                                    <div class="content9">
+                                    <div class="result-box rhiddenDiv" id="resultDivParallelogram">
+                                        <div id="resultParallelogram"></div>
+                                        <div id="unitOptionsParallelogram" style="">
+                                            <button onclick="toggleUnitTable('unitTableParallelogram')">Show result in other units</button>
+                                            <div id="unitTableParallelogram" style="display: none; margin-top: 10px;">
+                                                <table class="first-table-result" style="width: 100%; border-collapse: collapse;">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Area</th>
+                                                            <th>Unit</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody id="unitResultBodyParallelogram"></tbody>
+                                                </table>
+                                            </div>
+                                        </div>                        
+                                    </div>
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <label>Base <input type="number" id="baseParallelogram" value="30"></label>
+                                            </td>
+                                            <td>
+                                                <label>
+                                                    <select id="baseUnitParallelogram">
+                                                        <option value="feet" selected>feet</option>
+                                                        <option value="miles">miles</option>
+                                                        <option value="yards">yards</option>
+                                                        <option value="inches">inches</option>
+                                                        <option value="meters" >meters</option>
+                                                        <option value="kilometers">kilometers</option>
+                                                        <option value="centimeters">centimeters</option>
+                                                    </select>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label>Height <input type="number" id="heightParallelogram" value="20"></label>
+                                            </td>
+                                            <td>
+                                                <label>
+                                                    <select id="heightUnitParallelogram">
+                                                        <option value="feet">feet</option>
+                                                        <option value="miles">miles</option>
+                                                        <option value="yards">yards</option>
+                                                        <option value="inches">inches</option>
+                                                        <option value="meters" >meters</option>
+                                                        <option value="kilometers">kilometers</option>
+                                                        <option value="centimeters">centimeters</option>
+                                                    </select>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label>Quantity <input type="number" id="quantityParallelogram" value="1"></label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label>Price (optional) $ <input type="number" id="priceParallelogram"></label>
+                                            </td>
+                                            <td>
+                                                <label>
+                                                    <select id="priceUnitParallelogram">
+                                                        <option value="Square Feet" selected>per square feet</option>
+														<option value="Square yards">per square yards</option>
+														<option value="Square inches">per square inches</option>
+														<option value="Square meters" >per square meters</option>
+														<option value="Square centimeters">per square cm</option>
+                                                    </select>
+                                                </label>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    
+                                    <div class="button-container">
+                                          <button class="calculate-btn9" onclick="calculateAreaParallelogram()">Calculate</button>
+                                        <button class="clear-btn" onclick="clearFieldsParallelogram()">Clear</button>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div class="col-md-6 mt-3">
+                                    <div class="image1 mt-3">
+                                        <img src="images/area-parall.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+				</div>
+                </div>
+                </div>
+                </div>
+                                </div>
+                                </div>
+                              
+				 <!------------Ractangle-content-end-------------->  
+
+ <!-----------Square footage calculator-------------->  
+    <h2 class="ractangle-mid" id="footage">Understanding the Square Footage Calculator</h2><hr>
+             
+<div class="container">
+    <div class="row" style="padding-top: 50px;">
+            <div class="col-md-6 mt-3">
+                <div class="image1">
+                <img src="images/img12.png" alt="">
+            </div>
+            </div>
+        <div class="col-md-6 mt-3">
+            <div class="reference-text">
+			<br><h3>Reference</h3>
+<h4>
+1 acre = 43,560 square foot<br>
+1 square yard = 9 square foot<br>
+1 square meter = 10.76 square foot<br>
+1 square inch = 0.00064516 square foot
+</h4>
+<p>Have you ever started a project in your house only to realize halfway through that you didn't have enough material for flooring or painting? Or did you buy too much expensive material and waste money? If you have faced any of these issues and are wondering where you went wrong, then the answer may lie in simple square footage miscalculations.
+<br>
+<br>
+That's why, next time when you are building or renovating something, try using a square footage calculator online instead of manually calculating the measurements. These free square footage calculators ensure you get precise measurements instantly without any manual math or wastage of expensive resources. Let's dive more into this article to know where else these square footage calculators come in handy and what features they have to offer that make them a more convenient option than manual calculators.
+</p>
+</div>
+</div>
+</div>
+</div>
+ <!----------uses-Square footage calculator-------------->  
+<h2  style="padding-bottom: 20px; padding-top: 50px;">Uses of a Square Footage <span style="color: #3bccc7;">Calculator</span></h2>
+
+<p style="margin-top: -10px; color: #626262; font-size: 14px;">A square-foot calculator for a room is widely used in several applications, including:</p>
+
+<!----------clock frequently----------->
+<section id="freequently" style="padding-top: 50px;">
+    <div class="container">
+    </div>
+    <div class="container justify-content-center" style="width: 60%;">
+    <div class="accordion" id="accordionPanelsStayOpenExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne" style="color: rgb(143, 143, 143); font-size: 15px;">
+                House Building
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              <p style="font-size: 13px; color: rgb(143, 143, 143); line-height: 1.7em;">A square footage calculator for a house is the most important tool you need to have before building a home. You must have a solid plan for the total area of each room and other important sections while building a house. Contractors and architects rely on square footage calculations to estimate the material required and avoid wasting expensive construction materials. These estimations also help them to budget the project accordingly. The slightest mistake in these square footage calculations can lead to disruptions in the construction project. That's why architects and contractors should use the square footage calculator online to get accurate and fast calculations every time!</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item mt-3">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo2" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo" style="color: rgb(143, 143, 143); font-size: 15px; line-height: 1.7em;">
+                Painting a House
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseTwo2" class="accordion-collapse collapse">
+            <div class="accordion-body">
+                <p style="font-size: 13px; color: rgb(143, 143, 143); line-height: 1.7em;">When you are painting a house, you are required to have an accurate estimate of wall and ceiling areas to ensure that the correct amount of paint is purchased. Imagine finally getting a weekend off to paint, but due to miscalculation, you realize the paint isn't enough, and you are left hanging with a half-painted room till the next free weekend. That's where a room square footage calculator comes in. It helps determine how much paint is needed by providing error-free results, preventing over-purchasing or running short in the middle of the painting. This ensures a smooth, uninterrupted painting process, which will save you time and money while avoiding unnecessary trips to the store.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item mt-3">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree3" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree" style="color: rgb(143, 143, 143); font-size: 15px;">
+                Floor Installation: Wood, Tile, and Laminate
+            </button>
+          </h2>
+          <div id="panelsStayOpen-collapseThree3" class="accordion-collapse collapse">
+            <div class="accordion-body">
+                <p style="font-size: 13px; color: rgb(143, 143, 143); line-height: 1.7em;">Like house construction and painting rooms, flooring projects require precise measurements to avoid ordering excess materials or falling short in the middle of the work. A square-foot calculator simplifies the process and ensures homeowners and contractors order the correct amount of flooring.</p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item mt-3">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree8" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree" style="color: rgb(143, 143, 143); font-size: 15px;">
+                Wood Flooring
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree8" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                  <p style="font-size: 13px; color: rgb(143, 143, 143); line-height: 1.7em;">Hardwood flooring is an expensive renovation project, and if you end up purchasing excess material, you are making a big financial mistake. Instead of repeatedly running the square footage calculations manually to avoid this expensive mistake, we suggest using an online square footage calculator with decimals. These online square footage calculators provide accuracy in decimals and thus help you trim the waste.</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item mt-3">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree7" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree" style="color: rgb(143, 143, 143); font-size: 15px;">
+                Laminate Flooring
+              </button>
+            </h2>
+            <div id="panelsStayOpen-collapseThree7" class="accordion-collapse collapse">
+              <div class="accordion-body">
+                  <p style="font-size: 13px; color: rgb(143, 143, 143); line-height: 1.7em;">Laminate often comes in planks, and incorrect measurements can lead to purchasing too much or too little. A square-foot calculator for all shapes helps determine the best way to cut and arrange pieces efficiently.</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+</section>
+
+<!-----------online-use-squre-footage-calculator------->
+<h2 style="padding-bottom: 20px; padding-top: 70px;">Why Use an Online Square Footage <span style="color: #3bccc7;">Calculator?</span></span>
+<p style="padding-top: 10px; color: #626262; font-size: 14px;">A square footage calculator online is far superior to manual calculations for several reasons:</p>
+
+
+<div class="container" style="padding-top: 50px;">
+    <div class="row">
+        <div class="col-md-3 mt-3">
+            <div class="footage-img footage">
+                <img src="images/img (2).png" alt="">
+                <div class="footage-text">
+                    <h3>Instant Results</h3>
+                    <p>Manual square footage calculations take a lot of time, especially when you are doing them for the first time. The online square footage calculators require you to add the dimensions provide the measurements in a few seconds.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mt-3">
+            <div class="footage-img footage">
+                <img src="images/img (3).png" alt="">
+                <div class="footage-text">
+                    <h3>No Human Error</h3>
+                    <p>Square footage calculations are often complex, especially when the dimensions are in decimals. A small mistake in the calculations can lead to insufficient or too much material. The best online square footage results.</p>
+                </div>
+            </div>
+        </div> 
+        <div class="col-md-3 mt-3">
+            <div class="footage-img footage">
+                <img src="images/img11 (1).png" alt="">
+                <div class="footage-text">
+                    <h3>User-Friendly</h3>
+                    <p>Easy square foot calculators require you to only add the room's dimensions in the measurement units that are convenient for you.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 mt-3">
+            <div class="footage-img footage">
+                <img src="images/img (7).png" alt="">
+                <div class="footage-text">
+                    <h3>Supports Multiple Units</h3>
+                    <p>A square footage calculator of feet and inches allows precise measurements in different unit formats, including yards, meters, feet, and inches. This flexibility ensures accurate calculations working with imperial or metric systems.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </div>
+    </div>
+ </div>
+    
+    <!--------footer-------->
+<section id="footer" style="padding-top: 100px;">
+    <div class="footer">
+        <div class="footer-link">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-last">
+        <div class="footer-last-link">
+            <ul>
+                <li><a href="#">Contacts |</a></li>
+<li><a href="#">Terms of use |</a></li>
+<li><a href="#"> Privacy |</a></li>
+<li><span>© 2025 vClock.com</span></li>
+
+            </ul>
+        </div>
+    </div>
+</section>
+    
+
+    <script src="./js/calculation.js" defer=""></script>
+
+    <script>
+        //---------start mobile menu-------//
+        var icon = document.querySelector('.menu')
+        var bars = icon.querySelector('.fa-bars');
+        var listmenu = document.querySelector('#listmenu');
+        
+        icon.onclick = function(){
+            if(listmenu.style.maxHeight =="200px"){
+        listmenu.style.maxHeight ="0px";
+        bars.classList.contains('fa-bars');
+        bars.classList.replace('fa-times', 'fa-bars');
+            }
+            else{
+                listmenu.style.maxHeight="200px";
+                bars.classList.replace('fa-bars', 'fa-times');
+          
+            }
+        }
+        
+        
+        
+                const header = document.querySelector('header');
+                window.addEventListener('scroll', () =>{
+                if(window.pageYOffset > 200){
+                header.classList.add('header-bg')
+                }
+                else{
+                  header.classList.remove('header-bg')
+                }
+                })
+        //top to scrollbar 
+        var toTop = document.querySelector('.to-top');
+        
+        window.addEventListener('scroll', () =>{
+            if(window.pageYOffset > 200){
+                toTop.classList.add('to-top-active');
+            }
+            else{
+                toTop.classList.remove('to-top-active');
+            }
+        })
+        
+        
+            </script>
+</body>
+</html>
